@@ -4,10 +4,8 @@
   box-sizing: border-box;
 }
 
-
-/* Center everything in middle */
-
 body {
+  overflow: hidden;
   background: #000;
   font-family: "Helvetica Neue", sans-serif;
 
@@ -18,16 +16,11 @@ body {
   min-height: 100vh;
 }
 
-
-/* Main Wrapper */
-
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-
 
 /* Search Input */
 
@@ -83,8 +76,8 @@ body {
 .card {
   position: relative;
 
-  width: 170px;   /* ⭐ reduced from 200px */
-  height: 250px;  /* ⭐ reduced from 300px */
+  width: 170px;
+  height: 250px;
 
   border-radius: 10px;
   overflow: hidden;
@@ -94,7 +87,6 @@ body {
   box-shadow:
     0 20px 60px rgba(0, 0, 0, 0.4);
 }
-
 
 
 /* Image */
