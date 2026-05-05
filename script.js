@@ -45,3 +45,6 @@ const users = [
     bio: "Fitness coach helping people."
   }
 ];
+
+const container = document.querySelector(".container");
+let inp = document.querySelector("input");
