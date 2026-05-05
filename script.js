@@ -48,3 +48,14 @@ const users = [
 
 const container = document.querySelector(".container");
 let inp = document.querySelector("input");
+function showuser(arr) {
+   arr.forEach(function (user) {
+
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+ });
+
+  }
+
+showuser(users);
