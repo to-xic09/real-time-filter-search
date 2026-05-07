@@ -49,13 +49,17 @@ const users = [
 const container = document.querySelector(".container");
 let inp = document.querySelector("input");
 function showuser(arr) {
-   arr.forEach(function (user) {
+  arr.forEach(function (user) {
 
     const card = document.createElement("div");
     card.classList.add("card");
 
- });
+    const blurredLayer = document.createElement("div");
+    blurredLayer.classList.add("blurred-layer");
 
-  }
+
+  });
+
+}
 
 showuser(users);
