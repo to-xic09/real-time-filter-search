@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  min-height: 100vh;
+  min-height: 99vh;
 }
 
 .main {
@@ -65,7 +65,7 @@ body {
   position: relative;
 
   width: 170px;
-  height: 250px;
+  height: 248px;
 
   border-radius: 10px;
   overflow: hidden;
@@ -138,13 +138,13 @@ body {
 
 .content h3 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 598;
 
   margin-bottom: 4px;
 }
 
 .content p {
-  font-size: 12px;
+  font-size: 11px;
   color: #ddd;
 
   line-height: 1.3;
