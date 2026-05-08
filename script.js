@@ -66,3 +66,18 @@ function showuser(arr) {
 }
 
 showuser(users);
+
+inp.addEventListener("input", function () {
+
+  let newuser = users.filter((user) => {
+
+    return user.name
+      .toLowerCase()
+      .startsWith(inp.value.toLowerCase());
+
+  });
+
+  showuser(newuser);
+
+});
+
