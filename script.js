@@ -56,7 +56,7 @@ function showuser(arr) {
 
     const blurredLayer = document.createElement("div");
     blurredLayer.classList.add("blurred-layer");
-    
+
     blurredLayer.style.backgroundImage =
       `url('${user.pic}')`;
 
@@ -74,6 +74,13 @@ inp.addEventListener("input", function () {
     return user.name
       .toLowerCase()
       .startsWith(inp.value.toLowerCase());
+
+
+    const content = document.createElement("div");
+    content.classList.add("content");
+
+    const heading = document.createElement("h3");
+    heading.textContent = user.name;
 
   });
 
