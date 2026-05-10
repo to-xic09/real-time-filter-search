@@ -88,3 +88,17 @@ inp.addEventListener("input", function () {
 
 });
 
+inp.addEventListener("input", function () {
+
+  let newuser = users.filter((user) => {
+
+    return user.name
+      .toLowerCase()
+      .startsWith(inp.value.toLowerCase());
+
+  });
+
+  showuser(newuser);
+
+});
+
