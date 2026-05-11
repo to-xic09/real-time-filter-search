@@ -46,13 +46,22 @@ const users = [
   }
 ];
 
+
 const container = document.querySelector(".container");
 let inp = document.querySelector("input");
+
 function showuser(arr) {
+
+  container.innerHTML = "";
+
   arr.forEach(function (user) {
 
     const card = document.createElement("div");
     card.classList.add("card");
+
+    const bgImg = document.createElement("img");
+    bgImg.src = user.pic;
+    bgImg.classList.add("bg-img");
 
     const blurredLayer = document.createElement("div");
     blurredLayer.classList.add("blurred-layer");
@@ -60,6 +69,24 @@ function showuser(arr) {
     blurredLayer.style.backgroundImage =
       `url('${user.pic}')`;
 
+    const content = document.createElement("div");
+    content.classList.add("content");
+
+    const heading = document.createElement("h3");
+    heading.textContent = user.name;
+
+    const para = document.createElement("p");
+    para.textContent = user.bio;
+
+    content.append(heading, para);
+
+    card.append(
+      bgImg,
+      blurredLayer,
+      content
+    );
+
+    container.appendChild(card);
 
   });
 
@@ -67,26 +94,7 @@ function showuser(arr) {
 
 showuser(users);
 
-inp.addEventListener("input", function () {
 
-  let newuser = users.filter((user) => {
-
-    return user.name
-      .toLowerCase()
-      .startsWith(inp.value.toLowerCase());
-
-
-    const content = document.createElement("div");
-    content.classList.add("content");
-
-    const heading = document.createElement("h3");
-    heading.textContent = user.name;
-
-  });
-
-  showuser(newuser);
-
-});
 
 inp.addEventListener("input", function () {
 
@@ -101,4 +109,5 @@ inp.addEventListener("input", function () {
   showuser(newuser);
 
 });
+
 
