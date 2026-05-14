@@ -46,9 +46,13 @@ const users = [
   }
 ];
 
-
 const container = document.querySelector(".container");
 let inp = document.querySelector("input");
+
+
+// ==========================
+// CREATE CARDS
+// ==========================
 
 function showuser(arr) {
 
@@ -109,5 +113,4 @@ inp.addEventListener("input", function () {
   showuser(newuser);
 
 });
-
 
